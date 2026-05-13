@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<head>
+<title>FoodMarket</title>
+<link rel="stylesheet" href="sopi.css">
+</head>
+
+<body>
+
+<header>
+  <div class="header-container">
+    <h1>FoodMarket</h1>
+    <ul class="menu">
+      <li>
+        <a onclick="showPage('home')">Home</a>
+        <ul class="submenu">
+          <li><a onclick="showPage('home')">Promo</a></li>
+          <li><a onclick="showPage('home')">Terbaru</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a onclick="showPage('makanan')">Makanan</a>
+        <ul class="submenu">
+          <li><a onclick="showPage('makanan')">Nasi</a></li>
+          <li><a onclick="showPage('makanan')">Mie</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a onclick="showPage('minuman')">Minuman</a>
+        <ul class="submenu">
+          <li><a onclick="showPage('minuman')">Dingin</a></li>
+          <li><a onclick="showPage('minuman')">Panas</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a onclick="showPage('snack')">Snack</a>
+        <ul class="submenu">
+          <li><a onclick="showPage('snack')">Ringan</a></li>
+          <li><a onclick="showPage('snack')">Berat</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a onclick="showPage('register')">Register</a>
+        <ul class="submenu">
+          <li><a onclick="showPage('register')">Login</a></li>
+          <li><a onclick="showPage('register')">Daftar</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</header>
+
+
+<section id="home" class="active">
+  <h2>Selamat Datang di FoodMarket</h2>
+</section>
+
+
+<section id="makanan">
+  <h2>Makanan</h2>
+  <div class="product-grid">
+    <div class="card"><img src="ng.jpg"><h3>Nasi Goreng</h3><p>Lezat</p><span>Rp20.000</span><button onclick="beli('Nasi Goreng')">Beli</button></div>
+    <div class="card"><img src="my.jfif"><h3>Mie Ayam</h3><p>Enak</p><span>Rp15.000</span><button onclick="beli('Mie Ayam')">Beli</button></div>
+    <div class="card"><img src="st.jpg"><h3>Sate</h3><p>Gurih</p><span>Rp25.000</span><button onclick="beli('Sate')">Beli</button></div>
+    <div class="card"><img src="bk.jfif"><h3>Bakso</h3><p>Kenyal</p><span>Rp18.000</span><button onclick="beli('Bakso')">Beli</button></div>
+    <div class="card"><img src="ym.jfif"><h3>Ayam Goreng</h3><p>Crispy</p><span>Rp22.000</span><button onclick="beli('Ayam Goreng')">Beli</button></div>
+    <div class="card"><img src="rd.jpg"><h3>Rendang</h3><p>Padang</p><span>Rp30.000</span><button onclick="beli('Rendang')">Beli</button></div>
+  </div>
+</section>
+
+<section id="minuman">
+  <h2>Minuman</h2>
+  <div class="product-grid">
+    <div class="card"><img src="es.jpg"><h3>Es Teh</h3><p>Segar</p><span>Rp5.000</span><button onclick="beli('Es Teh')">Beli</button></div>
+    <div class="card"><img src="ju.jfif"><h3>Jus</h3><p>Sehat</p><span>Rp10.000</span><button onclick="beli('Jus')">Beli</button></div>
+    <div class="card"><img src="kc.jfif"><h3>Kopi</h3><p>Panas</p><span>Rp8.000</span><button onclick="beli('Kopi')">Beli</button></div>
+    <div class="card"><img src="mk.jfif"><h3>Milkshake</h3><p>Manis</p><span>Rp15.000</span><button onclick="beli('Milkshake')">Beli</button></div>
+    <div class="card"><img src="tk.jfif"><h3>Teh Tarik</h3><p>Hangat</p><span>Rp12.000</span><button onclick="beli('Teh Tarik')">Beli</button></div>
+    <div class="card"><img src="cl.jfif"><h3>Soda</h3><p>Dingin</p><span>Rp9.000</span><button onclick="beli('Soda')">Beli</button></div>
+  </div>
+</section>
+
+<section id="snack">
+  <h2>Snack</h2>
+  <div class="product-grid">
+    <div class="card"><img src="kp.jfif"><h3>Keripik</h3><p>Renyah</p><span>Rp10.000</span><button onclick="beli('Keripik')">Beli</button></div>
+    <div class="card"><img src="dn.jfif"><h3>Donat</h3><p>Manis</p><span>Rp8.000</span><button onclick="beli('Donat')">Beli</button></div>
+    <div class="card"><img src="rt.jfif"><h3>Roti</h3><p>Lembut</p><span>Rp7.000</span><button onclick="beli('Roti')">Beli</button></div>
+    <div class="card"><img src="pc.jfif"><h3>Pisang Goreng</h3><p>Hangat</p><span>Rp6.000</span><button onclick="beli('Pisang Goreng')">Beli</button></div>
+    <div class="card"><img src="cr.jfif"><h3>Cireng</h3><p>Gurih</p><span>Rp9.000</span><button onclick="beli('Cireng')">Beli</button></div>
+    <div class="card"><img src="ko.jfif"><h3>Kue</h3><p>Enak</p><span>Rp11.000</span><button onclick="beli('Kue')">Beli</button></div>
+  </div>
+</section>
+
+<section id="register">
+  <h2>Register</h2>
+  <form onsubmit="event.preventDefault(); alert('Berhasil daftar!')">
+    <input type="text" placeholder="Nama" required>
+    <input type="email" placeholder="Email" required>
+    <input type="password" placeholder="Password" required>
+    <button type="submit">Daftar</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2026 FoodMarket</p>
+</footer>
+
+<script src="sopi.js"></script>
+</body>
+</html>
